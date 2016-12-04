@@ -10,3 +10,9 @@ GET     /docente/:nb_doc_id         controllers.DocenteController.consultarDocen
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+# Return all active courses
+
+GET     /cursos                   controllers.CursoController.curso
+GET     /cursosNull               controllers.CursoController.cursoNull
+GET     /cursosInfo               controllers.CursoInfoController.cursoInfo
