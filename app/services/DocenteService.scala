@@ -1,7 +1,8 @@
 package services
 
 import javax.inject._
-import models.{Docente, Docentes}
+
+import models.{Docente, Docentes, Profesor}
 
 /**
   * Created by ubuntu on 17/10/16.
@@ -16,6 +17,10 @@ class DocenteService @Inject()(docentes: Docentes) {
 
   def traerTodo: Seq[Docente] = {
     docentes.traerTodo
+  }
+
+  def traerTodoOrden: Seq[Profesor] = {
+    docentes.traerTodoOrden
   }
 
 }
